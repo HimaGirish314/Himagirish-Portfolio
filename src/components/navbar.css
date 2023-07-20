@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-size: 1.1rem;
+    padding: 25px 60px 25px 70px;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    box-shadow: 0 0 10px rgb(177, 177, 177);
+    font-weight: 650;
+}
+nav .logo{
+    cursor: pointer;
+    color: #2d2e32;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1.6rem;
+    cursor: pointer;
+}
