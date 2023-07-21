@@ -6,22 +6,60 @@ nav{
     font-size: 1.1rem;
     padding: 25px 60px 25px 70px;
     height: auto;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: 200;
     width: 100%;
     box-shadow: 0 0 10px rgb(177, 177, 177);
-    font-weight: 650;
 }
 nav .logo{
     cursor: pointer;
     color: #2d2e32;
+    font-weight: 800;
 }
 
-nav ul{
+nav .nav-items{
     display: flex;
     list-style-type: none;
     gap: 1.6rem;
     cursor: pointer;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: #2d2e32;;
+
+}
+.mobile-menu{
+    display: none;
+    font-size: 1.5rem;
+}
+.menu-icons{
+    transition: all 0.2 ease-in-out;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    nav .nav-items{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.632);
+        height: 30vh;
+        right: 0;
+        top: 82px;
+        align-items: center;
+        /* justify-content: center; */
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    nav .nav-items.close{
+        top: -200%;
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+    }
 }
